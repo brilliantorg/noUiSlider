@@ -1,4 +1,4 @@
-/*! nouislider - 14.0.3 - 10/10/2019 */
+/*! nouislider - 14.0.3 - 11/13/2019 */
 (function(factory) {
     if (typeof define === "function" && define.amd) {
         // AMD. Register as an anonymous module.
@@ -1482,7 +1482,7 @@
 
             // Bind a closure on the target for every event type.
             events.split(" ").forEach(function(eventName) {
-                element.addEventListener(eventName, method, supportsPassive ? { passive: true } : false);
+                element.addEventListener(eventName, method);
                 methods.push([eventName, method]);
             });
 

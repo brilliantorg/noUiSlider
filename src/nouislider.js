@@ -1481,7 +1481,7 @@
 
             // Bind a closure on the target for every event type.
             events.split(" ").forEach(function(eventName) {
-                element.addEventListener(eventName, method, supportsPassive ? { passive: true } : false);
+                element.addEventListener(eventName, method);
                 methods.push([eventName, method]);
             });
 
